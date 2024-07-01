@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+product_id,product.name,model_product,base.group_user,1,1,1,1
+customer_id,customer.name,model_customer,base.group_user,1,1,1,1
+supplier_id,supplier.name,model_supplier,base.group_user,1,1,1,1
+employee_id,employee.name,model_employee,base.group_user,1,1,1,1
+manager_id,manager.name,model_manager,base.group_user,1,1,1,1

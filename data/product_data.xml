@@ -1,0 +1,16 @@
+<odoo noupdate="1">
+    <record id="product_xml_data" model="product">
+        <field name="name">product 1 xml</field>
+        <field name="price">1000</field>
+    </record>
+
+    <record id="product_second_xml_data" model="product">
+        <field name="name">product 2 xml</field>
+        <field name="price">2000</field>
+    </record>
+
+    <record id="product_third_xml_data" model="product">
+        <field name="name">product 3 xml</field>
+        <field name="price">3000</field>
+    </record>
+</odoo>

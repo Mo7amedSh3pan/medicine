@@ -1,0 +1,16 @@
+<odoo>
+
+    <menuitem
+            id="customers"
+            name="customers"
+            sequence="2"
+            parent="odoo"/>
+
+    <menuitem
+            id="all_customers"
+            name="all customers"
+            sequence="1"
+            parent="customers"
+            action="customer_action"/>
+
+</odoo>

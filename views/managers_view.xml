@@ -1,0 +1,55 @@
+<odoo>
+
+    <record id="manager_form_view" model="ir.ui.view">
+        <field name="name">manager form view</field>
+        <field name="model">manager</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="address"/>
+                            <field name="age"/>
+                            <field name="phone"/>
+                        </group>
+                        <group>
+                            <field name="id"/>
+                            <field name="salary"/>
+                            <field name="bonus"/>
+                            <field name="total_salary"/>
+                            <field name="employee_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="manager_tree_view" model="ir.ui.view">
+        <field name="name">manager tree view</field>
+        <field name="model">manager</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="address"/>
+                <field name="age"/>
+                <field name="phone"/>
+                <field name="id"/>
+                <field name="total_salary"/>
+                <field name="employee_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="manager_action" model="ir.actions.act_window">
+        <field name="name">all managers</field>
+        <field name="res_model">manager</field>
+    </record>
+</odoo>

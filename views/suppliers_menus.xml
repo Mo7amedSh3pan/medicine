@@ -1,0 +1,16 @@
+<odoo>
+
+    <menuitem
+            id="suppliers"
+            name="suppliers"
+            sequence="3"
+            parent="odoo"/>
+
+    <menuitem
+            id="all_suppliers"
+            name="all suppliers"
+            sequence="1"
+            parent="suppliers"
+            action="supplier_action"/>
+
+</odoo>

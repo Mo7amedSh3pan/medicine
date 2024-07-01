@@ -1,0 +1,74 @@
+<odoo>
+
+    <record id="customer_form_view" model="ir.ui.view">
+        <field name="name">customer form view</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="address"/>
+                            <field name="phone"/>
+                        </group>
+                        <group>
+                            <field name="order_date"/>
+                            <field name="delivery_date"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="total"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                    <field name="activity_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="customer_tree_view" model="ir.ui.view">
+        <field name="name">customer tree view</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="address"/>
+                <field name="state"/>
+                <field name="phone"/>
+                <field name="order_date"/>
+                <field name="delivery_date"/>
+                <field name="product_ids" widget="many2many_tags"/>
+                <field name="total"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="customer_search_view" model="ir.ui.view">
+        <field name="name">customer search view</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="address"/>
+
+                <filter name="new_filter" string="new state" domain="[('state','=','new')]"/>
+                <filter name="in_progress_filter" string="in progress state" domain="[('state','=','in_progress')]"/>
+                <filter name="done_filter" string="done state" domain="[('state','=','done')]"/>
+
+                <filter name="group_by_state" string="state" context="{'group_by':'state'}"/>
+            </search>
+        </field>
+    </record>
+
+
+    <record id="customer_action" model="ir.actions.act_window">
+        <field name="name">all customers</field>
+        <field name="res_model">customer</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,16 @@
+<odoo>
+
+    <menuitem
+            id="managers"
+            name="managers"
+            sequence="5"
+            parent="odoo"/>
+
+    <menuitem
+            id="all_managers"
+            name="all managers"
+            sequence="1"
+            parent="managers"
+            action="manager_action"/>
+
+</odoo>

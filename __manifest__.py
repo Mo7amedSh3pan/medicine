@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+{
+    'name': 'medicine',
+    'category': 'Accounting',
+    'summary': 'Manage my market',
+    'sequence':-110,
+    'description': "",
+    'version': '1.0',
+    'depends': ['mail'],
+    'data': [
+        'views/products_view.xml',
+        'views/products_menus.xml',
+        'views/customers_view.xml',
+        'views/customers_menus.xml',
+        'views/suppliers_view.xml',
+        'views/suppliers_menus.xml',
+        'views/employees_view.xml',
+        'views/employees_menus.xml',
+        'views/managers_view.xml',
+        'views/managers_menus.xml',
+        'security/ir.model.access.csv',
+        'data/customer.csv',
+        'data/employee.csv',
+        'data/manager.csv',
+        'data/product_data.xml',
+        'data/supplier_data.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

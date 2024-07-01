@@ -1,0 +1,54 @@
+<odoo>
+
+    <record id="product_form_view" model="ir.ui.view">
+        <field name="name">product form view</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="id"/>
+                        </group>
+                        <group>
+                            <field name="price"/>
+                            <field name="supplier_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="product_tree_view" model="ir.ui.view">
+        <field name="name">product tree view</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <tree >
+                <field name="name"/>
+                <field name="price"/>
+                <field name="id"/>
+                <field name="supplier_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="product_search_view" model="ir.ui.view">
+        <field name="name">product search view</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="product_action" model="ir.actions.act_window">
+        <field name="name">all products</field>
+        <field name="res_model">product</field>
+        <field name="view_mode">tree,form,search</field>
+    </record>
+
+</odoo>

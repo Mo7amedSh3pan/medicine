@@ -1,0 +1,20 @@
+<odoo>
+    <menuitem
+            id="odoo"
+            name="odoo"
+            sequence="1"/>
+
+    <menuitem
+            id="products"
+            name="products"
+            sequence="1"
+            parent="odoo"/>
+
+    <menuitem
+            id="all_products"
+            name="all products"
+            sequence="1"
+            parent="products"
+            action="product_action"/>
+
+</odoo>

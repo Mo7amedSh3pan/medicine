@@ -1,0 +1,4 @@
+name,address,phone,age,salary,bonus
+manager 1 csv,address 1 csv,phone 1 csv,25,3000,500
+manager 2 csv,address 2 csv,phone 2 csv,20,4000,1000
+manager 3 csv,address 3 csv,phone 3 csv,30,5000,1500

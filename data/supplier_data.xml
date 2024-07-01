@@ -1,0 +1,16 @@
+<odoo noupdate="1">
+    <record id="supplier_xml_data" model="supplier">
+        <field name="name">supplier 1 xml</field>
+        <field name="address">address 1 xml</field>
+    </record>
+
+    <record id="supplier_second_xml_data" model="supplier">
+        <field name="name">supplier 2 xml</field>
+        <field name="address">address 2 xml</field>
+    </record>
+
+    <record id="supplier_third_xml_data" model="supplier">
+        <field name="name">supplier 3 xml</field>
+        <field name="address">address 3 xml</field>
+    </record>
+</odoo>
